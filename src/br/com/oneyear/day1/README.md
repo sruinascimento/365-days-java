@@ -80,7 +80,7 @@ Retorna um `Stream<T>`
 
 **Código**
 ````java
-numeros.stream()
+    numeros.stream()
         .limit(5)
         .foreach(numero -> System.out.println(numero));
 
@@ -102,9 +102,9 @@ Retorna uma `Stream<T>` de elementos distintos, ou seja, elementos não repetido
 atentar para implementar os mesmos, caso o objeto seja de uma classe que criamos.
 
 ````java
- numbers.stream()
-                .distinct()
-                .forEach(numero -> System.out.println(numero));
+    numbers.stream()
+        .distinct()
+        .forEach(numero -> System.out.println(numero));
 ````
 
 Podemos usar todas mescladas. Os métodos `skip(n)`, `limit(n)` e `distinct()` são filtros, pois 
